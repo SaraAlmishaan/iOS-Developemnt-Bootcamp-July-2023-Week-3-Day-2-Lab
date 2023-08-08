@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     func labelTitleView(){
         self.view.addSubview(labelTitle)
         labelTitle.text = "Personalize your feed"
+        labelTitle.font = UIFont.systemFont(ofSize: 25.0)
         labelTitle.textAlignment = .center
         labelTitle.snp.makeConstraints {
             $0.top.equalTo(90)
