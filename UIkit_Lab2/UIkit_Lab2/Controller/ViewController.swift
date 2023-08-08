@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let objSection1 : SectionView = .init()
     var labelSection2 = UILabel()
     let objSection2 : SectionView2 = .init()
- 
+    var selectButton = UIButton()
   
     
          override func viewDidLoad() {
@@ -26,6 +26,7 @@ class ViewController: UIViewController {
              section1()
              label2View()
              section2()
+             selectbButtonViews()
          }
     
     
@@ -96,6 +97,19 @@ class ViewController: UIViewController {
             $0.top.equalTo(labelSection2.snp.bottom)
             $0.width.equalTo(self.view.frame.width-32)
             $0.height.equalTo(250)
+            $0.leading.equalTo(16)
+        }
+    }
+
+    func  selectbButtonViews(){
+        selectButton.setTitle("0 selected",  for: .normal)
+        selectButton.layer.cornerRadius = 10
+        selectButton.backgroundColor = .darkGray
+        self.view.addSubview(selectButton)
+        selectButton.snp.makeConstraints {
+            $0.top.equalTo(objSection2.snp.bottom)
+            $0.width.equalTo(self.view.frame.width - 32)
+            $0.height.equalTo(54)
             $0.leading.equalTo(16)
         }
     }
