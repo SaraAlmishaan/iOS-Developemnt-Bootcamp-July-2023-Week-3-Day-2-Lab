@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         labelTitle.text = "Personalize your feed"
         labelTitle.textAlignment = .center
         labelTitle.snp.makeConstraints {
-            $0.top.equalTo(50)
+            $0.top.equalTo(90)
             $0.width.equalTo(self.view.frame.width - 32)
-            $0.height.equalTo(100)
+            $0.height.equalTo(30)
         }
     }
 
