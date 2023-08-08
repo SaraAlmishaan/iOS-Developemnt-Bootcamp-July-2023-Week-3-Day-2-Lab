@@ -58,11 +58,10 @@ class ViewController: UIViewController {
         self.view.addSubview(labelSection1)
         labelSection1.text = "Most Popular"
         labelSection1.textAlignment = .left
-        
         labelSection1.snp.makeConstraints {
             $0.top.equalTo(labelSubTitle.snp.bottom)
             $0.width.equalTo(self.view.frame.width - 32)
-            $0.height.equalTo(25)
+            $0.height.equalTo(35)
             $0.leading.equalTo(16)
         }
     }
@@ -81,11 +80,10 @@ class ViewController: UIViewController {
         self.view.addSubview(labelSection2)
         labelSection2.text = "Lifestyle"
         labelSection2.textAlignment = .left
-        
         labelSection2.snp.makeConstraints {
             $0.top.equalTo(objSection1.snp.bottom)
             $0.width.equalTo(self.view.frame.width - 32)
-            $0.height.equalTo(25)
+            $0.height.equalTo(35)
             $0.leading.equalTo(16)
         }
     }
@@ -96,7 +94,7 @@ class ViewController: UIViewController {
         objSection2.snp.makeConstraints {
             $0.top.equalTo(labelSection2.snp.bottom)
             $0.width.equalTo(self.view.frame.width-32)
-            $0.height.equalTo(250)
+            $0.height.equalTo(280)
             $0.leading.equalTo(16)
         }
     }
